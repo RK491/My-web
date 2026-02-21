@@ -1,0 +1,28 @@
+{
+  "adminPassword": "9200202005@ptsbi",
+  "profile": {
+    "name": "Alex Developer",
+    "bio": "Full Stack Engineer | Coffee Enthusiast | Building digital experiences.",
+    "imageUrl": "https://via.placeholder.com/150"
+  },
+  "links": [
+    {
+      "id": 1,
+      "title": "GitHub",
+      "url": "https://github.com",
+      "color": "#333333"
+    },
+    {
+      "id": 2,
+      "title": "LinkedIn",
+      "url": "https://linkedin.com",
+      "color": "#0077b5"
+    },
+    {
+      "id": 3,
+      "title": "Twitter",
+      "url": "https://twitter.com",
+      "color": "#1da1f2"
+    }
+  ]
+}
