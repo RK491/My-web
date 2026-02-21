@@ -1,0 +1,12 @@
+{
+  "name": "personal-bio-site",
+  "version": "1.0.0",
+  "description": "Dynamic Personal Bio Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
