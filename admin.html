@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <!-- Login Section -->
+        <div id="login-section" class="card">
+            <h2>Admin Login</h2>
+            <input type="password" id="admin-password" placeholder="Enter Password">
+            <button onclick="login()">Login</button>
+            <p id="login-msg"></p>
+        </div>
+
+        <!-- Dashboard Section (Hidden by default) -->
+        <div id="dashboard-section" style="display: none;">
+            <div class="header">
+                <h2>Edit Profile</h2>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+
+            <!-- Profile Settings -->
+            <div class="card">
+                <h3>Profile Details</h3>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" id="edit-name">
+                </div>
+                <div class="form-group">
+                    <label>Bio</label>
+                    <textarea id="edit-bio" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Profile Image URL</label>
+                    <input type="text" id="edit-image" placeholder="https://example.com/image.jpg">
+                </div>
+            </div>
+
+            <!-- Links Settings -->
+            <div class="card">
+                <h3>Social Links</h3>
+                <div id="links-list">
+                    <!-- Dynamic inputs go here -->
+                </div>
+                <button class="add-btn" onclick="addLinkInput()">+ Add New Link</button>
+            </div>
+
+            <button class="save-btn" onclick="saveChanges()">Save All Changes</button>
+            <p id="save-msg"></p>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
